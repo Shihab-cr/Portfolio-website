@@ -83,15 +83,8 @@
             "skills":"Blender Substance",
             "url":"",
             "repo":""
-        },
-        {
-            "category":"GameDev",
-            "id": 10,
-            "thumbnail":"../public/imgs/",
-            "title":"Infinite Runner game",
-            "skills":"Unity",
-            "url":"",
-            "repo":""
         }
+        
+        
     ]
 }

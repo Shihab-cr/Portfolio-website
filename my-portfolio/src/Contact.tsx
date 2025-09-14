@@ -1,17 +1,17 @@
-import { useState } from "react";
+// import { useState } from "react";
 
 const Contact = () => {
-    const [nameIsChanged, setNameIsChanged] = useState(false);
-    const [emailIsChanged, setEmailIsChanged] = useState(false);
-    const [messageIsChanged, setMessageIsChanged] = useState(false);
+    // const [nameIsChanged, setNameIsChanged] = useState(false);
+    // const [emailIsChanged, setEmailIsChanged] = useState(false);
+    // const [messageIsChanged, setMessageIsChanged] = useState(false);
     const handleNameChange = ()=>{
-        setNameIsChanged(true);
+        // setNameIsChanged(true);
     }
     const handleEmailChange = ()=>{
-        setEmailIsChanged(true);
+        // setEmailIsChanged(true);
     }
     const handleMessageChange = ()=>{
-        setMessageIsChanged(true);
+        // setMessageIsChanged(true);
     }
     return ( 
         <div className="contact-section" id="contact-me">
@@ -28,5 +28,5 @@ const Contact = () => {
         </div>
     );
 }
- 
+
 export default Contact;

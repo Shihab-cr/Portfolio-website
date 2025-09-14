@@ -134,7 +134,7 @@ const ModelInner: FC<ModelInnerProps> = ({
     if (ext === 'glb' || ext === 'gltf') return useGLTF(url).scene.clone();
     if (ext === 'fbx') return useFBX(url).clone();
     // eslint-disable-next-line react-hooks/rules-of-hooks
-    if (ext === 'obj') return useLoader(OBJLoader, url).clone();
+    // if (ext === 'obj') return useLoader(OBJLoader, url).clone();
     console.error('Unsupported format:', ext);
     return null;
   }, [url, ext]);
