@@ -1,0 +1,97 @@
+{
+    "projects":[
+        {
+            "category": "Frontend",
+            "id": 1,
+            "thumbnail": "/imgs/recepie-4.PNG", 
+            "img":["/imgs/recepie-4.PNG","/imgs/recepie-3.PNG","/imgs/recepie-2.PNG","/imgs/recepie-1.PNG"],
+            "title":"Middle-Eastern recepie finder",
+            "skills":"React CSS TypeScript JSX",
+            "url":"https://middle-eastern-recepies-mcba-7g7xyqbfi-shihab-rehans-projects.vercel.app/",
+            "repo":"https://github.com/Shihab-cr/Middle-Eastern-recepies"
+        },
+        {
+            "category": "Frontend",
+            "id":2,
+            "thumbnail": "/imgs/jobPost-1.PNG",
+            "img":["/imgs/jobPost-1.PNG","/imgs/jobPost-3.PNG","/imgs/JobPost-2.PNG","/imgs/jobPost-4.PNG"],
+            "title":"Job-Posts website ",
+            "skills":"JavaScript CSS JSX",
+            "url":"https://job-posts-website-47c2.vercel.app/",
+            "repo":"https://github.com/Shihab-cr/Job-Posts-website"
+        },
+        {
+            "category": "Model",
+            "id":3,
+            "thumbnail":"./imgs/Cartoon-char-1.jpg",
+            "img":[""],
+            "title":"Cartoon Character",
+            "skills":"Blender Krita Retopoflow",
+            "url":"",
+            "repo":"" 
+        },
+        {
+            "category":"Model",
+            "id":4,
+            "thumbnail":"../public/imgs/Cartoon-TV-1.jpg",
+            "title":"Cartoon TV",
+            "skills":"Blender",
+            "url":"",
+            "repo":""
+        },
+        {
+            "category":"Model",
+            "id": 5,
+            "thumbnail":"./imgs/Character-1.jpg",
+            "title":"Stylized Character",
+            "skills":"Blender",
+            "url":"",
+            "repo":""
+        },
+        {
+            "category":"Model",
+            "id": 6,
+            "thumbnail":"./imgs/Shield-1.jpg",
+            "title":"Stylized Shield",
+            "skills":"Blender Krita",
+            "url":"",
+            "repo":""
+        },
+        {
+            "category":"Model",
+            "id": 7,
+            "thumbnail":"./imgs/Perfume-Pink-1.jpg",
+            "title":"Valentino Perfume",
+            "skills":"Blender",
+            "url":"",
+            "repo":""
+        },
+        {
+            "category":"Model",
+            "id": 8,
+            "thumbnail":"./imgs/Perfume-Yellow-1.jpg",
+            "title":"Opulant Perfume",
+            "skills":"Blender",
+            "url":"",
+            "repo":""
+        },
+        {
+            "category":"Model",
+            "id": 9,
+            "thumbnail":"./imgs/Old-TV-1.jpg",
+            "title":"Classic old TV",
+            "skills":"Blender Substance",
+            "url":"",
+            "repo":""
+        },
+        {
+            "category":"GameDev",
+            "id": 10,
+            "thumbnail":"../public/imgs/",
+            "title":"Infinite Runner game",
+            "skills":"Unity",
+            "url":"",
+            "repo":""
+        }
+    ]
+}

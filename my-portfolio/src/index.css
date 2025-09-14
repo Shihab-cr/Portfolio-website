@@ -1,0 +1,208 @@
+@import "tailwindcss";
+
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+@theme{
+        --color-highlight: #4ee1a0;
+        --color-paragraph: #b3b1b3;
+        --color-secondary: #242424;
+        --color-mainBg: #151515;
+}
+
+
+@layer base{
+        
+    body{
+        background-color: #151515;
+    }
+    textarea{
+        min-height: 150px;
+        @apply resize-none;
+    }
+    input, textarea{
+        transition: 0.3s;
+        @apply text-white border-b-white border-b-1 pr-2.5 pb-4;
+    }
+    input:focus, textarea:focus{
+        outline: none;
+        @apply border-b-highlight border-b-1;
+    }
+    input::placeholder, textarea::placeholder{
+        transition: 0.3s;
+    }
+    input:focus::placeholder, textarea:focus::placeholder{
+        opacity: 0;
+    }
+    svg{
+        transition: 0.3s;
+    }
+    svg:hover{
+        transform: scale(1.2);
+        @apply text-highlight;
+    }
+    .contact-section div h1{
+        @apply text-white text-8xl font-sans font-bold pb-7 text-nowrap;
+    }
+    h2{
+        @apply text-white text-7xl font-sans font-bold justify-center self-center;
+    }
+    @media(max-width: 767px){
+        .contact-section div h1{
+            @apply text-lg;
+        }
+        h2{
+            @apply text-5xl;
+        }
+    }
+}
+
+@layer components{
+    .container{
+        max-width: 900px;
+        @apply ml-auto mr-auto;
+    }
+    .landing{
+        @apply flex pb-40 border-b-2 border-b-white  pt-10 relative max-h-fit;
+    }
+    @media(max-width: 767px){
+        .landing{
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .salute{
+        max-width: 65%;
+        max-height: fit-content;
+    }
+    .highlight{
+        border-bottom-color: rgb(78, 225, 160);
+        border-bottom-style: solid;
+        border-bottom-width: 4px;
+    }
+    .contact{
+        color: white;
+        font-weight:bold;
+        max-width: fit-content;
+        transition: 0.3s;
+        bottom: 0px;
+        @apply pb-2.5 border-b-highlight border-b-4;
+    }
+    .contact:hover{
+        /* margin-top: 15px; */
+        transform: translateY(-10px);
+        @apply text-highlight cursor-pointer;
+    }
+    .img-holder{
+        content: '';
+        
+        margin-top: -250px;
+        margin-left: -50px;
+        margin-right: -30px;
+        /* height: 100vh; */
+        width: 100%;
+        margin-top: -70px;
+        z-index: -1;
+        position: relative;
+        @apply bg-secondary;
+    }
+    .img-holder::after{
+        content: '';
+        width: 100%;
+        height: 100%;
+        z-index: 0 ;
+        position: absolute;
+        margin-top: -120px;
+        top: -50px;
+        @apply bg-secondary;
+    }
+    .My-Skills{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        padding-left: 55px;
+
+        /* justify-self: center; */
+        @apply gap-5 mt-16 mr-auto ml-auto pb-20;
+    }
+    
+    .skill-box{
+        justify-self: flex-start;
+        @apply flex flex-col gap-4 mb-14 overflow-hidden;
+    }
+    .skill-box h2{
+        @apply text-nowrap w-full
+    }
+    .contact-section{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        @apply pt-30  gap-40 border-b-1 border-b-white mb-9 pb-28 pl-2 pr-2;
+    }
+    .social-media{
+            @apply flex justify-evenly gap-5
+    }
+    .social-media svg{
+
+    }
+    .navBars{
+        color: white;
+        display: none;
+    }
+    @media (max-width: 767px) {
+        .navBars{
+            display: block;
+        }
+        .social-media a{
+            display: none;
+        }
+    }
+    .projects-grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        /* justify-self: center; */
+        @apply pb-16 gap-12;
+    }
+    .myImg{
+        transition: 0.3s;
+        position: relative;
+        
+    }
+    .project-overview:hover .myImg{
+        opacity: 0.3;
+    }
+    .preview{
+        color: white;
+        font-weight:bold;
+        max-width: fit-content;
+        transition: 0.3s;
+        bottom: 0px;
+        /* display: none; */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        @apply pb-2.5 border-b-highlight border-b-4;
+    }
+    .preview:hover{
+        /* margin-top: 15px; */
+        transform: translateY(-10px);
+        @apply text-highlight cursor-pointer;
+    }
+    .more{
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        top: 50%;
+        left: 50%; 
+        transform: translate(-50%, -50%);
+        
+    }
+    .project-overview:hover .more{
+        display: flex;
+    }
+}
