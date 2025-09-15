@@ -4,6 +4,7 @@ import BlurText from "./BlurText"
 import DotGrid from "./DotGrid"
 import { usePage } from "./PageContext";
 import SkillBox from "./SkillBox"
+import AnimatedContent from "./AnimatedContent";
 const Skills = ()=>{
     function handleAnimationComplete(): void {
         console.log("animation completed");
@@ -28,9 +29,9 @@ const Skills = ()=>{
         }
     },[isFrontend,isAnimation, isGameDev, isModel]);
     return(
-        <div className="z-1 relative w-full min-h-[480px] overflow-hidden">
+        <div className="-z-1 relative w-full min-h-[480px] overflow-hidden">
             
-            <div className="absolute inset-0">
+            <div className="-ml-5 -mr-5 absolute inset-0">
     <DotGrid className="w-full h-full"
         dotSize={5}
         gap={15}
@@ -44,23 +45,37 @@ const Skills = ()=>{
         />
         </div>
 
-        <div className="flex mr-auto pl-14 max-w-fit">
+        <div className="flex mr-auto max-w-fit">
         <BlurText
                         text="Skills."
                         delay={700}
                         animateBy="words"
                         direction="top"
                         onAnimationComplete={handleAnimationComplete}
-                        className="mb-10 text-5xl font-bold font-sans text-highlight pt-12 text-center "
+                        className="skillType text-highlight "
                         />
-        <BlurText
+        <AnimatedContent
+                                        distance={50}
+                                        direction="horizontal"
+                                        reverse={false}
+                                        duration={1.2}
+                                        ease="power3.out"
+                                        initialOpacity={0.0}
+                                        animateOpacity
+                                        scale={1.1}
+                                        threshold={0.2}
+                                        delay={0.9}
+                                        >
+
+                    <BlurText
                         text={skillType}
                         delay={750}
                         animateBy="words"
                         direction="top"
                         onAnimationComplete={handleAnimationComplete}
-                        className="ml-0 mr-0 mb-10 text-5xl font-bold font-sans text-white pt-12 text-center "
+                        className="skillType ml-0 mr-0 text-white "
                         />
+                </AnimatedContent>
         </div>
 
         

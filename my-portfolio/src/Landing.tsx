@@ -1,7 +1,7 @@
 import AnimatedContent from "./AnimatedContent";
 import BlurText from "./BlurText";
 import ContactBtn from "./ContactBtn";
-import Dock from "./Dock";
+import Dock from "./Docker";
 // import DarkVeil from "./DarkVeil";
 import SplitText from "./SplitText"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -39,16 +39,14 @@ const Landing = () => {
   ];
 
     return ( 
-        <div className="landing w-full  relative">
-            <div className="absolute inset-0 -z-2">
-                {/* <DarkVeil /> */}
-            </div>
+        <div className="landing w-full  relative -z-0">
+            
             <div className="salute z-10">
                 <h1 className="text-5xl text-white font-sans font-bold max-w-full ">
                     
                     <SplitText
                     text="Sallam Alykom, It is nice to meet you. I am"
-                    className="text-5xl text-white font-sans font-bold max-w-full"
+                    className="splitText text-5xl text-white font-sans font-bold max-w-full"
                     delay={40}
                     duration={0.3}
                     ease="power3.out"
@@ -72,12 +70,12 @@ const Landing = () => {
                         threshold={0.2}
                         delay={1.9}
                         >
-                        {/* <div>Content to Animate</div> */}
+                        
                     <span className="highlight block max-w-fit pb-2.5">Shihab Rehan.</span>
                         </AnimatedContent>
                     </h1>
                     <AnimatedContent
-                        distance={150}
+                        distance={10}
                         direction="vertical"
                         reverse={false}
                         duration={1.2}
@@ -95,7 +93,7 @@ const Landing = () => {
                         animateBy="words"
                         direction="top"
                         onAnimationComplete={handleAnimationComplete}
-                        className="mb-16 text-lg font-sans max-w-2/3 text-paragraph pt-12"
+                        className="mb-16 text-lg font-sans max-w-3/3 text-paragraph pt-12"
                         />
                         </AnimatedContent>
                 <p className=" ">

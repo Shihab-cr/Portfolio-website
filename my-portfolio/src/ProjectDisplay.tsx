@@ -118,6 +118,7 @@ function ProjectDisplay({projects, isLoading, error}: displayProps):JSX.Element{
                 
                 })
             }
+            {!projects && <div className="text-4xl text-center text-paragraph opacity-50">This is work in progress</div>}
         </div>
     )
 }
