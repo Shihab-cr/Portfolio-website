@@ -13,21 +13,21 @@ import AnimatedContent from "./AnimatedContent"
 
 // library.add();
 
-type pro = {
-            category: string,
-            id: number,
-            counter: number,
-            thumbnail: string,
-            img: string[],
-            title: string,
-            skills: string,
-            url: string,
-            repo: string
 
-        }
+type Pro = {
+  id: number;
+  category: string;
+  
+  thumbnail?: string;
+  img: string[];
+  title: string;
+  skills: string;
+  url: string;
+  repo: string;
+};
 
 type displayProps={
-    projects: pro[],
+    projects: Pro[],
     isLoading: boolean,
     error: string
 }
@@ -50,7 +50,7 @@ function ProjectDisplay({projects, isLoading, error}: displayProps):JSX.Element{
         <div className="projects-grid">
             {isLoading && <div className="loading">Loading...</div>}
             {error !== "" && <div className="error">Error: {error}</div>}
-            {projects && projects.map((project: pro, index: number)=>{
+            {projects && projects.map((project: Pro, index: number)=>{
                 
                 if(project.category == "Frontend"){
                 return(
@@ -118,7 +118,7 @@ function ProjectDisplay({projects, isLoading, error}: displayProps):JSX.Element{
                 
                 })
             }
-            {!projects && <div className="text-4xl text-center text-paragraph opacity-50">This is work in progress</div>}
+            {(!projects || projects.length === 0) && <div className="text-4xl text-center text-paragraph opacity-50">This is work in progress</div>}
         </div>
     )
 }
