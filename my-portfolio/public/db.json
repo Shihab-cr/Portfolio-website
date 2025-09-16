@@ -33,7 +33,7 @@
         {
             "category":"Model",
             "id":4,
-            "thumbnail":"../public/imgs/Cartoon-TV-1.jpg",
+            "thumbnail":"./imgs/Cartoon-TV-1.jpg",
             "title":"Cartoon TV",
             "skills":"Blender",
             "url":"",

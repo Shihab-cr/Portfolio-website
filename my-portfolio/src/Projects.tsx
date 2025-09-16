@@ -103,7 +103,7 @@ const ProjectsDebug: React.FC = () => {
     <div className="flex flex-col gap-10 projects -z-0">
       <div className="flex flex-row justify-between jus -z-0">
         <AnimatedContent distance={150} direction="horizontal" reverse={false} duration={1.2} ease="power3.out" initialOpacity={0.0} animateOpacity scale={1.1} threshold={0.2} delay={0.9}>
-          <h2 className="text-5xl">Projects (DEBUG)</h2>
+          <h2 className="text-5xl">Projects</h2>
         </AnimatedContent>
 
         <AnimatedContent distance={150} direction="horizontal" reverse={true} duration={1.2} ease="power3.out" initialOpacity={0.0} animateOpacity scale={1.1} threshold={0.2} delay={0.9}>
